@@ -1,0 +1,55 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final Project - B Simonsen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="Basic.css">
+  </head>
+  
+  <body>
+    <h1><center> Bee Hive Inspection Record</center> </h1>
+
+    <div id="hiveList">
+      <button type="button" id="status">
+        Add New Inspection
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Hive</th>
+            <th>Date Inspected</th>
+            <th>Notes</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="beeHives">
+        </tbody>
+      </table>
+    </div>
+
+    <div id="addStatus" style="display:none">
+      <form>
+        <label for="hive">Hive</label>
+        <input type="text" id="hive" />
+        <br />
+        <label for="dateChecked">Date Inspected</label>
+        <input type="date" id="dateChecked" />
+        <br />
+        <label for="notes">Notes</label>
+        <input type="text" id="notes" />
+        <br />
+        <button type="submit" id="submit">
+          Add Status
+        </button>
+        <button type="button" id="cancel">
+          Cancel
+        </button>
+      </form>
+    </div>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script src="addRows.js"></script>
+  </body>
+</html>
